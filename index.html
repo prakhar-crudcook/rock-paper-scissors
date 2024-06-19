@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Rock Paper Scissors
+        </title>
+
+        <link rel="stylesheet"  href="./index.css">
+    </head>
+
+    <body>
+        <div class="">
+            <div class="name">
+                <h1>Rock Paper Scissors</h1>
+            </div>
+
+            <div class="options">
+                <div>
+                    <button class="rock-button" 
+                    onclick="
+                    makeMove('rock')"
+                    >
+                        <img src="./assets/rock.png">
+                    </button>
+                </div>
+
+                <div>
+                    <button class="paper-button"
+                    onclick="makeMove('paper')">
+                        <img src="./assets/paper.png">
+                    </button>
+                </div>
+
+                <div>
+                    <button class="scissors-button"
+                    onclick="
+                    makeMove('scissors')">
+                        <img src="./assets/scissors.png">
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <p class="moves-display"></p>
+                <p class="result-display"></p>
+                <p class="score-display"></p>
+            </div>
+
+            <div class="reset-container"
+            onclick="resetScore()">
+                <button class="reset-score">Reset</button>
+            </div>
+        </div>
+
+        <script src="./index.js"></script>
+        
+    </body>
+</html>
